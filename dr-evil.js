@@ -14,7 +14,7 @@ the end if the amount is 1 million. For example:
 // YOUR CODE GOES HERE
 
 function DrEvil(dollars) {
-  if (dollars == 1000000) {
+  if (dollars === 1000000) {
     return dollars + " dollars (pinky)";
   } else {
     return dollars + " dollars";
