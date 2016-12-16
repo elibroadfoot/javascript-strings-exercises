@@ -15,8 +15,13 @@ the end if the amount is 1 million. For example:
 
 function DrEvil(dollars) {
   if (dollars == 1000000) {
-    return dollars + "dollars (pinky)";
+    return dollars + " dollars (pinky)";
   } else {
-    return dollars + "dollars";
+    return dollars + " dollars";
   }
 }
+
+
+var output = DrEvil(process.argv[2]);
+
+console.log(output);
