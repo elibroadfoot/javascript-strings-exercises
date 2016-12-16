@@ -18,3 +18,14 @@ For example:
 */
 
 // YOUR CODE GOES HERE
+
+function notBad(sentence) {
+  var not = sentence.indexOf("not");
+  var bad = sentence.indexOf("bad");
+  if (not === -1 || bad === -1 || bad < not) return sentence;
+  return sentence.slice(0, not) + 'good' + sentence.slice(bad + 3);
+}
+
+var output = notBad(process.argv[2]);
+
+console.log(output);
