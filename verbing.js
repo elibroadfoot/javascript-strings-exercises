@@ -14,3 +14,16 @@ is less than 3, it should leave it unchanged. For example:
 */
 
 // YOUR CODE GOES HERE
+
+function verbing(verb) {
+  if (verb.length < 3) return verb;
+  if (verb.slice(-3) == 'ing') {
+    return verb + 'ly';
+  } else {
+    return verb + 'ing';
+  }
+}
+
+var output = verbing(process.argv[2]);
+
+console.log(output);
