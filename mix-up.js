@@ -13,3 +13,11 @@ at least 2 characters long. For example:
 */
 
 // YOUR CODE GOES HERE
+
+function mixUp(a, b) {
+  return b.slice(0,2) + a.slice(2) + " " + a.slice(0,2) + b.slice(2);
+}
+
+var output = mixUp('mix', 'pod');
+
+console.log(output);

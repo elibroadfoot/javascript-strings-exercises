@@ -22,6 +22,6 @@ function DrEvil(dollars) {
 }
 
 
-var output = DrEvil(process.argv[2]);
+var output = DrEvil(parseInt(process.argv[2]));
 
 console.log(output);
